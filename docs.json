@@ -79,13 +79,13 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:support@vexrender.com"
+        "href": "mailto:founder@vexrender.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Open App",
-      "href": "https://vexrender.vercel.app/"
+      "label": "Docs",
+      "href": "https://docs.vexrender.com/"
     }
   },
   "contextual": {
