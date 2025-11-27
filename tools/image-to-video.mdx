@@ -44,8 +44,6 @@ Prompt = Subject + Subject Description + Movement + Scene + Scene Details + Came
 
 ## Image → Video gallery
 
-<Note>Replace `/images/aaa.jpg`, `/images/sss.jpg`, `/images/ddd.jpg` with your source photos.</Note>
-
 <Columns cols={3}>
   <div>
     <img src="/images/aaa.jpg" alt="Source photo" className="w-full rounded-xl" noZoom />
@@ -54,10 +52,11 @@ Prompt = Subject + Subject Description + Movement + Scene + Scene Details + Came
     </div>
     <video
       className="w-full rounded-xl"
-      style={{objectFit: "contain"}}
+      style={{aspectRatio: "16 / 9", objectFit: "cover"}}
       src="https://res.cloudinary.com/dffj8ly14/video/upload/v1764254939/download_14_xa2xif.mp4"
       controls
       playsInline
+      muted
       loop
       controlsList="nodownload noremoteplayback nofullscreen noplaybackrate"
       disablePictureInPicture
@@ -70,10 +69,11 @@ Prompt = Subject + Subject Description + Movement + Scene + Scene Details + Came
     </div>
     <video
       className="w-full rounded-xl"
-      style={{objectFit: "contain"}}
+      style={{aspectRatio: "16 / 9", objectFit: "cover"}}
       src="https://res.cloudinary.com/dffj8ly14/video/upload/v1764254944/download_15_esu6hy.mp4"
       controls
       playsInline
+      muted
       loop
       controlsList="nodownload noremoteplayback nofullscreen noplaybackrate"
       disablePictureInPicture
@@ -86,10 +86,11 @@ Prompt = Subject + Subject Description + Movement + Scene + Scene Details + Came
     </div>
     <video
       className="w-full rounded-xl"
-      style={{objectFit: "contain"}}
+      style={{aspectRatio: "16 / 9", objectFit: "cover"}}
       src="https://res.cloudinary.com/dffj8ly14/video/upload/v1764254948/download_16_sfwgoj.mp4"
       controls
       playsInline
+      muted
       loop
       controlsList="nodownload noremoteplayback nofullscreen noplaybackrate"
       disablePictureInPicture
