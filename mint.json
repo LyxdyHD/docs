@@ -1,6 +1,6 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "$schema": "https://mintlify.com/mint.json",
+  "theme": "venus",
   "name": "VexRender",
   "colors": {
     "primary": "#6C5CE7",
@@ -8,73 +8,51 @@
     "dark": "#5B4DE6"
   },
   "favicon": "/images/logo.png",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting Started",
-            "pages": [
-              "index",
-              "quickstart",
-              "guides/how-vexrender-works"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Tools",
-        "groups": [
-          {
-            "group": "Creation",
-            "pages": [
-              "tools/text-to-image",
-              "tools/text-to-video",
-              "tools/image-to-video"
-            ]
-          },
-          {
-            "group": "Enhancement",
-            "pages": [
-              "tools/motion-brush",
-              "tools/style-transfer",
-              "tools/upscaler",
-              "tools/export-and-formats"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Resources",
-        "groups": [
-          {
-            "group": "Help",
-            "pages": [
-              "resources/prompts-library",
-              "resources/faqs"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Legal",
-        "groups": [
-          {
-            "group": "Legal",
-            "pages": [
-              "legal/terms",
-              "legal/privacy"
-            ]
-          }
-        ]
-      }
-    ]
-  },
   "logo": {
-    "light": "/logo/vex-wordmark-light.svg",
-    "dark": "/logo/vex-wordmark-dark.svg"
+    "light": "/logo/vex-wordmark-light.svg?v=2",
+    "dark": "/logo/vex-wordmark-dark.svg?v=2"
   },
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": [
+        "index",
+        "quickstart",
+        "guides/how-vexrender-works"
+      ]
+    },
+    {
+      "group": "Creation",
+      "pages": [
+        "tools/text-to-image",
+        "tools/text-to-video",
+        "tools/image-to-video"
+      ]
+    },
+    {
+      "group": "Enhancement",
+      "pages": [
+        "tools/motion-brush",
+        "tools/style-transfer",
+        "tools/upscaler",
+        "tools/export-and-formats"
+      ]
+    },
+    {
+      "group": "Help",
+      "pages": [
+        "resources/prompts-library",
+        "resources/faqs"
+      ]
+    },
+    {
+      "group": "Legal",
+      "pages": [
+        "legal/terms",
+        "legal/privacy"
+      ]
+    }
+  ],
   "navbar": {
     "links": [
       {
@@ -87,18 +65,6 @@
       "label": "Docs",
       "href": "https://docs.vexrender.com/"
     }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
   },
   "footer": {}
 }
