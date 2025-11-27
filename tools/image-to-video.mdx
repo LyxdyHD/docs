@@ -28,10 +28,66 @@ Start from a still image and add motion. Great for product shots, key art, and s
 - Generate multiple takes and evaluate subject stability and background motion.
 - Refine with Motion Brush for targeted movement; export and upscale as needed.
 
+## Prompt formula
+
+Prompt = Subject + Subject Description + Movement + Scene + Scene Details + Camera + Lighting + Atmosphere
+
+- Movement defines the motion beats (pan, zoom, parallax, ambient effects)
+- Keep prompts concise and focused to preserve the source composition
+
 ## Examples
 
 - Product shot with parallax: foreground product stable, background gentle parallax left → right.
--  Settings: `durationSeconds=6`, `motionStrength=0.5`, `stabilizationStrength=0.6`
+  Settings: `durationSeconds=6`, `motionStrength=0.5`, `stabilizationStrength=0.6`
 
 - Landscape zoom: slow push-in across a sunset vista.
--  Settings: `durationSeconds=10`, `motionStrength=0.4`, `motionDirection=zoom-in`
+  Settings: `durationSeconds=10`, `motionStrength=0.4`, `motionDirection=zoom-in`
+
+## Image → Video gallery
+
+<Note>Replace `/images/aaa.jpg`, `/images/sss.jpg`, `/images/ddd.jpg` with your source photos.</Note>
+
+<Columns cols={3}>
+  <div>
+    <h4>aaa image — noir alley</h4>
+    <img src="/images/aaa.jpg" alt="Noir alley source" className="w-full rounded-xl" noZoom />
+    <video
+      className="w-full aspect-video rounded-xl"
+      src="https://res.cloudinary.com/dffj8ly14/video/upload/v1764254939/download_14_xa2xif.mp4"
+      controls
+      playsInline
+      loop
+      controlsList="nodownload noremoteplayback nofullscreen noplaybackrate"
+      disablePictureInPicture
+    ></video>
+    <small>Low‑angle static shot; pushed Vision3 500T texture; drizzle, neon flicker, manhole steam; subtle breath; eyes slowly open; cut at 4s.</small>
+  </div>
+  <div>
+    <h4>sss image — rainy platform</h4>
+    <img src="/images/sss.jpg" alt="Rainy platform source" className="w-full rounded-xl" noZoom />
+    <video
+      className="w-full aspect-video rounded-xl"
+      src="https://res.cloudinary.com/dffj8ly14/video/upload/v1764254944/download_15_esu6hy.mp4"
+      controls
+      playsInline
+      loop
+      controlsList="nodownload noremoteplayback nofullscreen noplaybackrate"
+      disablePictureInPicture
+    ></video>
+    <small>Static frame through rainy window; warm horizontal anamorphic flare; pensive expression; subtle eye glisten and breath; holds on mood.</small>
+  </div>
+  <div>
+    <h4>ddd image — arcane scriptorium</h4>
+    <img src="/images/ddd.jpg" alt="Scriptorium source" className="w-full rounded-xl" noZoom />
+    <video
+      className="w-full aspect-video rounded-xl"
+      src="https://res.cloudinary.com/dffj8ly14/video/upload/v1764254948/download_16_sfwgoj.mp4"
+      controls
+      playsInline
+      loop
+      controlsList="nodownload noremoteplayback nofullscreen noplaybackrate"
+      disablePictureInPicture
+    ></video>
+    <small>Low‑angle medium; chiaroscuro; candle warm key; book glows with purple energy; particles and runes lift; eyes glow; cape billow; freeze on climax.</small>
+  </div>
+</Columns>
